@@ -14,12 +14,17 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object RepositoryModule {
 
-    @Provides
-    @Singleton
-    fun provideExpenseRepository(
-        dao: ExpenseDao
-    ): ExpenseRepository {
-        return ExpenseRepositoryImpl(dao)
+    @Module
+    @InstallIn(SingletonComponent::class)
+    object RepositoryModule {
 
+        @Provides
+        @Singleton
+        fun provideExpenseRepository(
+            dao: ExpenseDao
+        ): ExpenseRepository {
+            return ExpenseRepositoryImpl(dao)
+        }
     }
+
 }

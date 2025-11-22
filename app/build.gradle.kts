@@ -43,6 +43,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    implementation(libs.androidx.navigation.compose)
     // room database
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)

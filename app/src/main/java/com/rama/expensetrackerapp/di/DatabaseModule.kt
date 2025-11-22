@@ -7,6 +7,7 @@ import com.rama.expensetrackerapp.data.local.database.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
@@ -16,16 +17,14 @@ import javax.inject.Singleton
 object DatabaseModule {
 
 
-    @Provides
-    @Singleton
-    fun provideContext(application: ExpenseTrackerApp): Context = application
+
 
 
     @Provides
     @Singleton
-    fun provideDatabase(app: Context): AppDatabase {
+    fun provideDatabase(@ApplicationContext context: Context): AppDatabase {
         return Room.databaseBuilder(
-            app,
+            context,
             AppDatabase::class.java,
             "expense_tracker_db"
         ).build()

@@ -1,4 +1,9 @@
 package com.rama.expensetrackerapp.presentation.insights
 
-class InsightsScreen {
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+
+@Composable
+fun InsightsScreen(onBack: () -> Unit) {
+    Text("Insights Screen")
 }

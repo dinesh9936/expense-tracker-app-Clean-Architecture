@@ -1,1 +1,72 @@
 /build
+# ===========================
+# Android / Kotlin / Gradle
+# ===========================
+
+# Gradle build
+/build/
+*/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration files
+/local.properties
+
+# JetBrains IDE files (Android Studio)
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/gradle.xml
+.idea/**/dictionaries
+.idea/**/vcs.xml
+.idea/**/misc.xml
+.idea/**/jarRepositories.xml
+.idea/modules.xml
+*.iml
+
+# Kotlin build artifacts
+*.kotlin_module
+
+# Gradle caches
+.gradle/
+**/out/
+
+# Generated files
+captures/
+output.json
+
+# Signing files
+*.jks
+*.keystore
+
+# Android Keystore
+*.keystore
+*.jks
+
+# Google Services (if using Firebase)
+google-services.json
+app/google-services.json
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# App bundle / APK outputs
+*.apk
+*.ap_
+*.aab
+
+# IntelliJ project settings
+*.iws
+.idea/modules.xml
+.idea/jarRepositories.xml
+
+# Temporary files
+*.tmp
+*.temp
+
+# Android Test build output
+*/androidTest/*
+*/test/*

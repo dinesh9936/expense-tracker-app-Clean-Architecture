@@ -39,9 +39,7 @@ fun AppNavGraph(navController: NavHostController) {
 
         composable(
             route = Screen.AddExpense.route,
-            arguments = listOf(
-                navArgument("id") { type = NavType.IntType }
-            )
+            arguments = listOf(navArgument("id") { type = NavType.IntType })
         ) { entry ->
 
             val id = entry.arguments?.getInt("id") ?: -1

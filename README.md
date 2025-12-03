@@ -1,11 +1,11 @@
-# 💰 Expense Tracker App
+# Expense Tracker App
 
 A modern **Expense Tracking** Android application built using **Clean Architecture**, **Jetpack Compose**, **Room**, **Hilt**, **Coroutines**, and **Flow**.  
 This project is designed to be scalable, testable, and production-level — perfect for learning real-world Android development.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Add expense (In Local DB - Room)  
 - Show list of expenses
@@ -17,7 +17,7 @@ This project is designed to be scalable, testable, and production-level — perf
 
 
 
-## 🧪 Tech Stack
+## Tech Stack
 
 - **Kotlin**
 - **Jetpack Compose**
@@ -31,7 +31,7 @@ This project is designed to be scalable, testable, and production-level — perf
 - **Navigation Compose**
 
 
-## 📱 App Screens
+## App Screens
 <p align="center">
   <img src="screenshots/homescreen_image.jpg" width="100" style="margin-right: 20px;"  alt=""/>
   <img src="screenshots/add_expenses_image.jpg" width="100"  alt=""/>
